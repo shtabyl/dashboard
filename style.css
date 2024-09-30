@@ -45,6 +45,7 @@ body {
 .title {
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 .title_logo {
     display: inline-block;
@@ -114,6 +115,7 @@ input[type="search"] {
     padding: 0.5rem 1.5rem;
     font-weight: 500;
     font-size: 1.2rem;
+    text-align: center;
 }
 .button_search {
     display: inline;
@@ -155,4 +157,70 @@ input[type="search"] {
     display: flex;
     align-content: center;
     gap: 15px;
+}
+.projects__list {
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+}
+.projects__item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    height: 200px;
+    p {
+        font-family: Tahoma;
+        font-size: 0.9rem;
+    }
+}
+.projects__link {
+    display: block;
+    color: black;
+    display: block;
+    padding: 1.5rem;
+    & > * {
+        margin-bottom: 10px;
+    }
+}
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+.main__projects {
+    grid-area: projects;
+}
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.main__announcements {
+    grid-area: announcements;
+}
+.main__trending {
+    grid-area: trending;
+}
+.announcements-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}
+.trending__info {
+    display: flex;
+    gap: 1rem;
+}
+.trending__title {
+    display: inline-block;
+}
+.trending__item {
+    margin-bottom: 10px;
 }
