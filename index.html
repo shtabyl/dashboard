@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a885737f75.js" crossorigin="anonymous"></script>
+
     <title>Dashboard</title>
 </head>
 <body>
-    Dashboard
+    <header class="header">
+        <div class="header__top">
+            <form action="#" class="header-top__search">
+                <button class="button button_search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <input type="search">
+            </form>
+            <div class="header-top_user-box">
+                <i class="fa-solid fa-bell"></i>
+                <span src="" alt="Icon" class=" header-top__avatar avatar"></span>
+                <span class="header-top__name">John Doe</span>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <span class="header-bottom__avatar avatar"></span>
+            <div class="header-bottom__name-box">
+                <p class="header-bottom__greeting">Hi, there,</p>
+                <span class="header-bottom__name">John Doe
+                    <span class="header-bottom__nickname">(@johndoe)</span>
+                </span>
+            </div>
+            <div class="header-bottom__menu">
+                <a href="#" class="button link button_header">New</a>
+                <a href="#" class="button link button_header">Upload</a>
+                <a href="#" class="button link button_header">Share</a>
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-brands fa-hive"></i>
+            <h1 class="title title_logo">Dashboard</h1>
+        </div>
+        <menu class="nav">
+            <li class="nav__item">
+                <i class="fa-solid fa-house"></i>
+                <a href="#" class="nav__link link link_menu">Home</a>
+            </li>
+            <li class="nav__item">
+                <i class="fa-solid fa-user"></i>
+                <a href="#" class="nav__link link link_menu">Profile</a>
+            </li>
+            <li class="nav__item">
+                <i class="fa-solid fa-message"></i>
+                <a href="#" class="nav__link link link_menu">Messages</a>
+            </li>
+            <li class="nav__item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <a href="#" class="nav__link link link_menu">History</a>
+            </li>
+            <li class="nav__item">
+                <i class="fa-solid fa-file"></i>
+                <a href="#" class="nav__link link link_menu">Tasks</a>
+            </li>
+            <li class="nav__item">
+                <i class="fa-solid fa-people-group"></i>
+                <a href="#" class="nav__link link link_menu">Communities</a>
+            </li>
+        </menu>
+        <ul class="settings">
+            <li class="settings__item">
+                <i class="fa-solid fa-gear"></i>
+                <a href="#" class="settings__link link link_menu">Settings</a>
+            </li>
+            <li class="settings__item">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#" class="settings__link link link_menu">Support</a>
+            </li>
+            <li class="settings__item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <a href="#" class="settings__link link link_menu">Privacy</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main"></main>
 </body>
 </html>
